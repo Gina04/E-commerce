@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap');
+/*Formulario de agregar productos*/
+.formulario-agregar-producto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 25px;
+}
+
+.formulario-agregar-producto form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+input{
+    height: 56px;
+    border: none;
+    margin: 8px;
+}
+
+
+.formulario-agregar-producto form input:nth-child(4){
+    height: 82px;
+}
+
+.btn-enviar{
+    background: #2A7AE4;
+    color: #FFFFFF;
+    border: none;
+    height: 51px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Formulario de contacto*/
+
+.input-contacto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.input-contacto-error.input{
+    border: 1px solid #df2525;
+}
+
+.input-mensaje-error{
+    display: none;
+}
+
+
+.input-contacto-error .input-mensaje-error {
+    color: #df2525;
+    display: block;
+    margin-bottom: 1.375rem;
+    padding-left: 0.5rem;
+}
+
+
+
+/*Formulario de Registro y Inicio de sesión*/
+

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap');
+.app {
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "container"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 115px auto auto;
+    
+}
+
+.header{
+    background: #FFFFFF;
+    width: 100%;
+    grid-area: header;
+    align-items: center;
+    display: flex;
+    padding: .4rem;
+    justify-content: space-between;    
+}
+
+
+.menu{
+    display: flex;
+    width:50%;   
+}
+
+.menu__link {
+    color: #333333;
+    padding: .5rem 1rem;
+    text-decoration: none;
+
+}
+
+.menu__link:hover, .menu__link:active{
+    border-bottom: 2px solid #0073e6;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+#buscador{
+    background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+    background-size: 24px;
+    width:20%;
+    border: transparent;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 10px 10px 30px;
+    outline: none;
+  }
+
+
+.btn-registro{
+    background: transparent;
+    border: 1px solid #2A7AE4;
+    padding:10px;
+    color: #2A7AE4;
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+}
+
+.container{
+    grid-area: container;   
+}
+
+
+
+.icon{
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
+}
+
+
+
+.footer { 
+    background: #ffff;
+    border-top: 1px solid #dcdcdc;
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.iconos-sociales{
+    width: 50px;
+    height: auto;
+    
+}

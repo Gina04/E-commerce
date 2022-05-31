@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap');
+
+.catalogue-news-card{
+    background-color: #fdfdfd;
+    display: grid;
+    grid-template-areas: 
+        "card-news-img"
+        "card-news-base";
+    grid-template-columns:100%;
+    grid-template-rows: 164px auto;
+    width: calc(16.6% - 1rem);
+    margin: auto;
+    
+}
+
+.card-news-img{
+    grid-area: card-news-img;
+    height: 100%;
+    width: 100%;
+}
+
+/*como va a contener otra grid le pedimos se comporte como grid tmb*/
+.card-news-base{
+    display: grid;
+    grid-area: card-news-base;
+    grid-template-areas: 
+        "card-news-header" /* no estoy utilizando estos grid*/
+        "card-news-description"
+        "card-news-button";
+    grid-template-rows: 20px auto; 
+    padding: .75rem;  
+
+}
+
+.card-news-description{
+    grid-area: card-news-description;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem;
+}
+
+.card-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0rem;
+}
+
+.catalogue-news-header{
+    grid-column:1/7;
+    grid-row:1/2;
+    margin: auto;
+}
+
+.catalogue-news-card:nth-child(2){
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
+}
+
+.catalogue-news-card:nth-child(3){
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+
+.catalogue-news-card:nth-child(4){
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+}
+
+.catalogue-news-card:nth-child(5){
+    grid-column: 4/5;
+    grid-row: 2/3;
+    
+}
+
+.catalogue-news-card:nth-child(6){
+    grid-column: 5/6;
+    grid-row: 2/3;
+    
+}
+
+.catalogue-news-card:nth-child(7){
+    grid-column: 6/7;
+    grid-row: 2/3;
+}
+    
+
+
+
+.catalogue-news-tittle{
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+}
+
+.catalogue-news-header{
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    margin: 27px 16px;
+}
+
+.catalogue-news-button{
+    background: transparent;
+    border: none;
+    color: #2A7AE4;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Ver Productos*/
+
+.container-descripcion-producto{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 30px 0 30px 0;
+    
+}
+
+.imagen-producto{
+    width: 30%;
+         
+}
+
+.imagen-descripcion-producto{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.descripcion-producto{
+    width: 40%;
+}
+
+.productos-relacionados-titulo{
+    color: #464646;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    margin: 15px;
+}
+.productos-relacionados{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-productos-realacionados{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.item-relacionado{
+    width: 15%;
+}
+
+.formulario-contacto{
+    background: #EAF2FD;
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+    margin-top: 30px;
+    
+}
+
+.formulario-logo{
+    width: 27%;
+    text-align: center;
+    
+}
+.formulario-logo img{
+    border: none;
+    border-radius: 40%;
+
+}
+
+.formulario-texto{
+    display: flex;
+    flex-direction:column;
+    width: 27%;
+    justify-content: space-between;
+}
+
+.formulario-campos {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.formulario-campos form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.titulo-formulario-campos{
+    padding-left: 15px;
+    font-size: 16px;
+    color: #464646;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formulario-campos form input, button{
+    padding: 10px;
+    margin: 5px;
+}
+
+/*ver todos los productos*/
+
+.productos-relacionados-titulo{
+    color: #464646;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;   
+}
+
+/*.productos-relacionados-titulo button{
+    background: #2A7AE4;
+    border: none;
+    padding: 16px;
+    color: #EAF2FD;
+}*/
+

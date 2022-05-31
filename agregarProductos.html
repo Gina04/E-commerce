@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perrolandia</title>
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/catalogue.css" rel="stylesheet">
+    <link href="./assets/css/hero.css" rel="stylesheet">
+    <link href="./assets/css/novedades.css" rel="stylesheet">
+    <link href="./assets/css/responsive.css" rel="stylesheet">
+    <link href="./assets/css/formularios.css" rel="stylesheet">
+
+
+
+</head>
+<body class="app">
+    <header class="header">
+        <!--Poner de bootstrap un menu responsive-->
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a class="menu__link activo" href="index.html">
+                        <i class="fas fa-home"></i>
+                        Inicio
+                    </a>
+                    <a class="menu__link" href="#">PetShop</a>
+                    <a class="menu__link" href="#">Servicios</a>
+                    <a class="menu__link" href="#">Adopción</a>
+                    <a class="menu__link" href="#">Contactame</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="search" placeholder="Que deseas buscar?" id="buscador" class="input-buscador"/>
+        <button class="btn-registro">Iniciar Sesión</button>
+    </header>
+    
+    <main class="container-verProducto">
+        <section class="formulario-agregar-producto">
+            <form method="post" action="#" enctype="multipart/form-data">
+                <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+                <input type="text" placeholder="Nombre producto">
+                <input type="number" placeholder="Precio">
+                <input type="text" placeholder="Descripcion producto">
+                <button class="btn-enviar">Agregar producto</button>
+            </form>
+        </section>        
+
+        <section class="formulario-contacto">
+            <div class="formulario-logo">
+                <img src="./assets/img/logo.png" alt="logo" class="class" width="176px" height="174px">
+            </div>
+            <div class="formulario-texto">
+                <a href="#"> Quien Soy?</a>
+                <a href="#"> Nuestras tiendas</a>
+                <a href="#"> Politica de privacidad</a>
+                <a href="#"> Programa de fidelidad</a>
+            </div>
+
+            <div class="formulario-campos">
+                <div class="titulo-formulario-campos">Hable con nosotros</div>
+                <form>
+                    <div class="input-contacto">
+                        <input type="text" placeholder="Nombre" class="input" id="nombre" required data-tipo="nombre" />
+                        <span class="input-mensaje-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-contacto">
+                        <input type="text" placeholder="Escriba su mensaje" class="input" id="mensaje" required data-tipo="mensaje"/>
+                        <span class="input-mensaje-error">Este campo no es valido</span>
+                    </div>
+                    <button class="btn-enviar">Enviar</button>
+                </form>
+            </div>
+
+        </section>    
+    </main>
+
+    <footer class="footer">
+        <a href="https://www.instagram.com/pet_shop_perrolandia/"><img class = "iconos-sociales" src="./assets/img/instagram.png"></a>
+        <a href="https://www.facebook.com/perrolandia.rego.5"><img class = "iconos-sociales" src="./assets/img/facebook.png"></a>
+        <a href="#"><img class = "iconos-sociales" src="./assets/img/what.png"></a>
+    </footer>
+<script src="./js/app.js" type="module"></script> 
+</body>
+</html>
